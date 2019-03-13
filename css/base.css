@@ -1,0 +1,52 @@
+.base {                /*版型的公共类*/
+    width: 1190px;    /*京东的版型*/
+    margin: 0 auto;
+}
+.fl{                  /*浮动的公共类*/
+    float: left;
+}
+.fr{                   /*浮动的公共类*/
+    float: right;
+}
+.f10{
+    color: #f10215;
+}
+a{
+    text-decoration: none;/*文字修饰线*/
+    font-size: 12px;
+    color: #999999;
+}
+a:hover{
+    color:#c81623;
+}
+ul{
+    list-style-type: none;/*列表前标志*/
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f6f6f6;
+}
+/*顶部*/
+header {
+    height: 80px;
+    background-color: #020000;
+}
+.shortcut{               /*快速导航栏*/
+    height: 31px;
+    line-height: 31px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #dddddd;
+}
+.city{
+    margin-left: 200px;
+}
+.shortcut li{
+    float:left;
+}
+.space{                 /*小竖线*/
+    width: 1px;
+    height: 10px;
+    background-color: #cccccc;
+    margin: 10px 12px 0;/*上 左右 下*/
+}
