@@ -1,52 +1,113 @@
-.base {                /*版型的公共类*/
+.base
+{
+    /*版型的公共类*/
     width: 1190px;    /*京东的版型*/
     margin: 0 auto;
 }
-.fl{                  /*浮动的公共类*/
+.fl
+{
+    /*浮动的公共类*/
     float: left;
 }
-.fr{                   /*浮动的公共类*/
+.fr
+{
+    /*浮动的公共类*/
     float: right;
 }
-.f10{
-    color: #f10215;
+.f10
+{
+    /*京东红*/
+    color: #f10215!important;
 }
-a{
-    text-decoration: none;/*文字修饰线*/
+a
+{
+    /*超链接字体样式*/
     font-size: 12px;
-    color: #999999;
+
+    text-decoration: none;/*文字修饰线*/
+
+    color: #999;
 }
-a:hover{
-    color:#c81623;
+a:hover
+{
+    /*超链接被选中*/
+    color: #c81623;
 }
-ul{
-    list-style-type: none;/*列表前标志*/
+ul
+{
     margin: 0;
     padding: 0;
+
+    list-style-type: none;/*去掉列表前标志*/
 }
-body{
+@font-face
+{
+    /*导航栏图标*/
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/icomoon.eot?pjgi40');
+    src: url('../fonts/icomoon.eot?pjgi40#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?pjgi40') format('truetype'),
+    url('../fonts/icomoon.woff?pjgi40') format('woff'),
+    url('../fonts/icomoon.svg?pjgi40#icomoon') format('svg');
+}
+body
+{
     background-color: #f6f6f6;
 }
-/*顶部*/
-header {
+header
+{
+    /*顶部*/
     height: 80px;
+
     background-color: #020000;
 }
-.shortcut{               /*快速导航栏*/
-    height: 31px;
+.shortcut
+{
+    /*快速导航栏*/
     line-height: 31px;
+    height: 31px;
+
+    border-bottom: 1px solid #ddd;
     background-color: #e3e4e5;
-    border-bottom: 1px solid #dddddd;
 }
-.city{
+.city
+{
+    /*城市项*/
     margin-left: 200px;
 }
-.shortcut li{
-    float:left;
+.shortcut li
+{
+    float: left;              /*列表左浮动*/
 }
-.space{                 /*小竖线*/
+.shortcut i
+{
+    font-family: "icomoon";/*只是声明字体*/
+    font-weight: normal;
+    font-style: normal;
+    color: #cccccc;
+}
+.space
+{
+    /*小竖线*/
     width: 1px;
     height: 10px;
-    background-color: #cccccc;
     margin: 10px 12px 0;/*上 左右 下*/
+
+    background-color: #ccc;
+}
+.mobile
+{
+    position: relative;/*相对定位*/
+}
+.mobile img
+{
+    border: 1px solid #cccccc;
+    padding: 3px;
+
+    position: absolute;/*绝对定位*/
+    left: -3px;
+    top: 24px;
 }
